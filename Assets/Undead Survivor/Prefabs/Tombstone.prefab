@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3991250756363962696}
   - component: {fileID: -6763775540393291211}
   m_Layer: 9
-  m_Name: StormBringer
+  m_Name: Tombstone
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

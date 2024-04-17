@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Bullet : MonoBehaviour
 {
+    [Header("데미지")]
     public float damage;
+    [Header("관통력")]
     public int per;
 
     Rigidbody2D rigid;

@@ -32,7 +32,6 @@ public class Weapon : MonoBehaviour
         player = GameManager.instance.player;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!GameManager.instance.isLive)
@@ -52,7 +51,8 @@ public class Weapon : MonoBehaviour
                 break;
             case 6:
                 GameManager.instance.skillCool += Time.deltaTime;
-                if (GameManager.instance.skillCool > GameManager.instance.skillTimer && Input.GetKeyDown(KeyCode.Space) && player.playerId == 0)
+                if (GameManager.instance.skillCool > GameManager.instance.skillTimer 
+                    && Input.GetKeyDown(KeyCode.Space) && player.playerId == 0)
                 {
                     GameManager.instance.skillCool = 0f;
                     Fire();
@@ -71,7 +71,7 @@ public class Weapon : MonoBehaviour
                 if(bringerTimer > bringerspeed)
                 {
                     bringerTimer = 0;
-                    Stormbringer();
+                    TombStone();
                 }
                 break;
             default:
@@ -226,7 +226,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public void Stormbringer()
+    public void TombStone()
     {
         if (!player.scanner.nearestTarget)
             return;

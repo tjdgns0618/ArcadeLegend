@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public float damageTime = 0f;
 
     public RuntimeAnimatorController[] animCon;
+    [HideInInspector]
     public Rigidbody2D target;
     public GameObject exp;
     public Transform[] targets;
